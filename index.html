@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Arpit porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(26, 23, 23);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 81px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        div.left {
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            color: white;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul a:hover {
+            text-decoration: none;
+            color: cyan;
+            font-size: 1.06rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .resume-button {
+            display: inline;
+            display: inline-block;
+            background-color: #4a3535;
+            color: #e1eae5;
+            text-decoration: none;
+            border: 2px solid #a18aae;
+            border-radius: 7px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        .resume-button:hover {
+            background-color: #8f1c1c;
+            /* Darker grey background color on hover */
+            color: #f6f2f2;
+           
+        }
+
+        .leftsection {
+            color: white;
+            font-size: 2rem;
+
+        }
+
+        .rightsection img {
+            width: 100%;
+            margin: 10px;
+        }
+
+        .purple {
+            color: rgb(199, 141, 74);
+        }
+
+        #element {
+            color: rgb(214, 152, 130);
+        }
+
+        hr {
+            border-radius: 1px;
+            border-color: rgb(0, 0, 0);
+        
+        }
+
+        .secondsection {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .left img {
+            size: 100px;
+            width: 80%;
+            float: right;
+            margin-left: 50px;
+        }
+
+        .right {
+            color: white;
+            width: 50%;
+            float: left;
+            padding: 20px;
+            /* margin-left: 0px;
+            color: white;
+            justify-content: right;
+            text-align: center ; */
+
+        }
+
+        .right h2 {
+            color: rgb(116, 105, 185);
+        }
+
+        .right p {
+            font-size: 2rem;
+        }
+
+        .about {
+            color: white;
+            font-size: 1.5rem;
+
+        }
+
+        footer {
+            background-color: #0a0707;
+            color: #ebe8e8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #contact {
+            margin-bottom: 20px;
+        }
+
+        #contact h2 {
+            color: #ffd700;
+            /* Change the color to your preference */
+        }
+
+        #contact p {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #ffd700;
+            /* Change the color to your preference */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Arpit Portfolio</div>
+            <div class="right">
+                <ul>
+                    <a href="/">
+                        <li>Home</li>
+                    </a>
+                    <a href="/">
+                        <li>About</li>
+                    </a>
+                    <a href="/">
+                        <li>Services</li>
+                    </a>
+                    <a href="/">
+                        <li>Projects</li>
+                    </a>
+                    <a href="/">
+                        <li>Contact Me </li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi , My name is <span class="purple"> Arpit </span>
+                <div>And I am a developer </div>
+                <span id="element"></span><br>
+                <a href="C:\Users\HP\Desktop\Arpit cccvvvv\arpit resuume1.pdf" class="resume-button" download>Download
+                    Resume</a>
+
+            </div>
+            <div class="rightsection">
+                <img src="Bge.png" alt="">
+            </div>
+        </section>
+        <section class="secondsection">
+            <div class="left">
+                <img src="arpit.png" alt="">
+            </div>
+            <div class="right">
+                <h2> About me</h2>
+                <p>Seeking a positon to utlize my skills and abilites in the information technology industry that offer
+                    professional growth
+                    while being resourceful, innovative and flexible. Entry level position in Software
+                    Design/Development. </p>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Full stack developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <hr>
+    <footer>
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: arpitkushwaha36@gmail.com</p>
+            <p>Phone: (+91) 9302448545</p>
+            <p>
+                Follow me on social media:
+                <a href="https://www.facebook.com/rohit.arpitkushwaha/" target="_blank"
+                    rel="noopener noreferrer">Facebook</a> |
+                <a href="https://www.instagram.com/arpit__kush_waha/" target="_blank"
+                    rel="noopener noreferrer">Instagram</a>
+            </p>
+            <!-- You can add more contact information or a contact form as needed -->
+        </div>
+
+        <!-- Additional footer content goes here -->
+
+        <div id="copyright">
+            <p>&copy; 2023 Your Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
